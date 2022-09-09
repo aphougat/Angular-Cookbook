@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import { NotificationsService } from '../service/notifications.service';
 
 @Component({
   selector: 'app-notifications-button',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NotificationsButtonComponent implements OnInit {
 
-  constructor() { }
+  notificationCount$ : Observable<number>;
+
+  constructor(private notificationService : NotificationsService) { }
 
   ngOnInit(): void {
+    this.notificationCount$ = this.notificationService.count$;
   }
 
 }

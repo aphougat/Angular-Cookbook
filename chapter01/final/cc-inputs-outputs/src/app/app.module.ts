@@ -17,6 +17,9 @@ import { NotificationsButtonComponent } from './notifications-button/notificatio
     AppRoutingModule
   ],
   providers: [],
+  exports: [
+    NotificationsManagerComponent
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
