@@ -15,7 +15,7 @@ export class HighlightDirective implements OnChanges {
   originalHTML = '';
   constructor(private el: ElementRef) { }
 
-  ngOnChanges(changes: SimpleChanges) {
+  ngOnChanges(changes: SimpleChanges): void {
     if (changes.highlightText.firstChange) {
       this.originalHTML = this.el.nativeElement.innerHTML;
       return;

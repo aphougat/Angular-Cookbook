@@ -15,6 +15,9 @@ import { IfNotDirective } from './directives/if-not.directive';
     AppRoutingModule
   ],
   providers: [],
+  exports: [
+    IfNotDirective
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

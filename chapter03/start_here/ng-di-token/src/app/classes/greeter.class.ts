@@ -1,4 +1,5 @@
 import { User } from '../interfaces/user.interface';
+import { InjectionToken } from '@angular/core';
 export class Greeter implements User {
   firstName;
   lastName;
@@ -12,3 +13,8 @@ export class Greeter implements User {
   }
 
 }
+
+export const GREETER = new InjectionToken('Greeter', {
+  providedIn: 'root',
+  factory: () => Greeter
+});

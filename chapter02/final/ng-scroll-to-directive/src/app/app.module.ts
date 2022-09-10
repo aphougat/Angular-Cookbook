@@ -15,6 +15,9 @@ import { ScrollToDirective } from './directives/scroll-to.directive';
     AppRoutingModule
   ],
   providers: [],
+  exports: [
+    ScrollToDirective
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
