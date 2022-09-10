@@ -10,9 +10,7 @@ import { TwitterCardComponent } from './components/twitter-card/twitter-card.com
 @NgModule({
   declarations: [
     AppComponent,
-    SocialCardComponent,
-    FbCardComponent,
-    TwitterCardComponent
+    SocialCardComponent
   ],
   imports: [
     BrowserModule,

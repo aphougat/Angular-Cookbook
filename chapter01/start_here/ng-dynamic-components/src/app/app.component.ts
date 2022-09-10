@@ -11,7 +11,7 @@ export class AppComponent {
   selectedCardType: SocialCardType;
   cardTypes = SocialCardType;
 
-  setCardType(type: SocialCardType) {
+  setCardType = (type: SocialCardType) => {
     this.selectedCardType = type;
   }
 }
